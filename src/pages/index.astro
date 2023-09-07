@@ -1,0 +1,26 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { ViewTransitions } from "astro:transitions";
+import ThreeGlobe from "../components/ThreeGlobe";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <ViewTransitions />
+  </head>
+  <body style="overflow-x: hidden">
+    <Header title={SITE_TITLE} />
+    <section class="max-h-screen">
+      <h1 class="flex items-center pt-9 justify-center text-5xl font-bold">
+        Thiago's mind
+      </h1>
+      <ThreeGlobe client:load />
+      <Footer />
+    </section>
+  </body>
+</html>

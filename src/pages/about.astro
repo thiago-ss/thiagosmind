@@ -1,0 +1,24 @@
+---
+import Layout from "../layouts/BlogPost.astro";
+import { ViewTransitions } from "astro:transitions";
+---
+
+<Layout
+  title="About Me"
+  description="Lorem ipsum dolor sit amet"
+  pubDate={new Date("August 31 2023")}
+  heroImage="/photo.jpg"
+>
+  <ViewTransitions />
+  <p>
+    I started my career in programming in 2021, at the age of 17, while I was in
+    the final semester of my vocational school in Systems Analysis and
+    Development at SENAI. I had the opportunity to take part in the scholarship
+    program at <a class="text-[#FC8001]" href="https://compass.uol/en/home/"
+      >Compass UOL</a
+    > through my vocational school, working as a front-end developer with
+    Angular. Since then, I have grown significantly thanks to the knowledge I
+    gained, which has led me to my current role as a Junior front-end developer
+    at Compass.
+  </p>
+</Layout>
